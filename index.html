@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy New Year 💖</title>
+  <style>
+    body{
+      background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #fff;
+      padding: 30px;
+    }
+
+    .msg{
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    button{
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: hotpink;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 15px hotpink;
+    }
+
+    .heart-box{
+      display: none;
+      margin-top: 40px;
+    }
+
+    .heart{
+      position: relative;
+      width: 160px;
+      height: 160px;
+      background: hotpink;
+      margin: auto;
+      transform: rotate(-45deg);
+      animation: glow 1.5s infinite alternate;
+    }
+
+    .heart::before,
+    .heart::after{
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      background: hotpink;
+      border-radius: 50%;
+    }
+
+    .heart::before{
+      top: -80px;
+      left: 0;
+    }
+
+    .heart::after{
+      left: 80px;
+      top: 0;
+    }
+
+    @keyframes glow{
+      from{
+        box-shadow: 0 0 20px hotpink;
+      }
+      to{
+        box-shadow: 0 0 50px hotpink;
+      }
+    }
+
+    .heart-text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="msg">
+    Happy new year da thango🫂🤗😚💋...<br><br>
+
+    This yr will bring u all the gud things✨🤞 n nt just this yr I'll always be there fr u 🫂🩵...<br><br>
+
+    This New Year, I'm sending u nt just wishes, but my whole heart💓💖💞...<br>
+    all is well ❤️‍🩹 luv u 😘 n miss u🥺🥺🫂🫂<br><br>
+
+    If u're smiling rn just knw tht someone far away is loving u deeply and missing u so much....🫂🫂😘😚💋🥺<br><br>
+
+    You're always mine🩵✨🫶
+  </div>
+
+  <button onclick="showHeart()">💖 Click Now 💖</button>
+
+  <div class="heart-box" id="heartBox">
+    <div class="heart">
+      <div class="heart-text">
+        Hari<br>❤️<br>Priya
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showHeart(){
+      document.getElementById("heartBox").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
